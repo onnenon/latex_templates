@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%					
+%											%
+%	Latex Document Format for SE 185 Labs at Iowa State University			%
+%	Creator: Stephen Onnen								%
+%	Email: stephen.onnen@gmail.com							%
+%											%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+%
+% Packages
+%
+
+\usepackage{color}
+\usepackage[letterpaper, margin=1in]{geometry}
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage[cache=false]{minted}
+\setmonofont{Fira Mono}
+\usemintedstyle{*monokai*}
+
+\definecolor{codegray}{rgb}{0.450,0.514,0.514}
+
+\renewcommand\theFancyVerbLine{\scriptsize\color{codegray}\ttfamily\arabic{FancyVerbLine}}
+%
+% Beginning of Document
+%
+
+\begin{document}
+
+%
+% Title Page
+%
+
+\begin{titlepage} 
+\begin{center}
+\vspace*{\fill}
+%
+% Change Title Page to Correct Name
+\Huge\textbf{Lab Report Title}
+\vskip 0.5in
+%
+% Change Lab #
+\large\textbf{LAB \#} \par
+\Large\textbf{SE 185 SECTION A}
+\vskip 0.5in
+\large\textbf{SUBMITTED BY:} \par
+\LARGE\textbf{Stephen Onnen}
+\vskip 0.5in
+\large\textbf{SUBMISSION DATE:} \par
+\LARGE\textbf{January 10th, 2018}
+\vspace*{\fill}
+\end{center}
+\end{titlepage}
+\begin{normalsize} % Document Body
+
+\section{Lab Problem} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%							%
+%            !!!!!!!!!!LAB PROBLEM!!!!!!!!!		%
+%							%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\vskip 0.25in
+\section{Analysis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%							%
+%             !!!!!!!!!!ANALYSIS!!!!!!!!!		%
+%							%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\vskip 0.25in
+\section{Design}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%							%
+%               !!!!!!!!!!DESIGN!!!!!!!!!		%
+%							%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\vskip 0.25in
+\section{Testing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%							%
+%              !!!!!!!!!!TESTING!!!!!!!!!		%
+%							%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\vskip 0.25in
+\section{Comments}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%							%
+%     	      !!!!!!!!!!COMMENTS!!!!!!!!!		%
+%							%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{normalsize}
+\begin{normalsize} % Code
+\pagebreak
+\begin{center}
+\Large\textbf{Source Code}
+\end{center}
+\vskip 0.25in
+\ttfamily
+\footnotesize
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%							%
+%     !!!!!!!!!!CODE GOES INSIDE {minted}!!!!!!!!!	%
+%     		  Change Language Type			%
+%							%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\inputminted[linenos]{C}{example.c}
+\end{normalsize}
+\end{document}
