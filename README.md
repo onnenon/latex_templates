@@ -9,7 +9,7 @@ sudo dnf install texlive texlive-collection-xetex
 ```
 With LaTex installed, we now need to install dependencies to allow code snippets inside the template, this includes:
 - Python
-- the pip Pygments *(to allow syntax highlighting)*
+- the **Pygments** pip *(to allow syntax highlighting)*
 - the **Minted** LaTeX package *(To add the code to the LaTeX document at compile time)*
 
 ##### Python
@@ -45,3 +45,7 @@ In order to properly compile the template:
 - Then run the script passing the name of the edited template as a single argument `./createpdf.sh lab_3.tex`
 
 A PDF with the same name as the .tex file will be compiled in the current directory.
+
+#### Useful Refrences
+- Minted documentation: [https://github.com/gpoore/minted]
+- LaTex documentation: [https://en.wikibooks.org/wiki/LaTeX]
