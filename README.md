@@ -25,7 +25,7 @@ pip install Pygments --user
 ##### Minted LaTeX Package
 
 ```
-sudo dnf install 'tex(minted.sty)'
+sudo dnf install texlive-minted
 ```
 #### Using the Template
 - First clone the repo `https://github.com/onnenon/latex_templates.git` and `cd` into the latex_templates directory.
@@ -47,5 +47,5 @@ In order to properly compile the template:
 A PDF with the same name as the .tex file will be compiled in the current directory.
 
 #### Useful Refrences
-- Minted documentation: [https://github.com/gpoore/minted]
-- LaTex documentation: [https://en.wikibooks.org/wiki/LaTeX]
+- Minted documentation: https://github.com/gpoore/minted
+- LaTex documentation: https://en.wikibooks.org/wiki/LaTeX
