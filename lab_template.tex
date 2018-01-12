@@ -14,16 +14,34 @@
 \usepackage[letterpaper, margin=1in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{fontspec}
-\usepackage{minted}
-\usemintedstyle{monokai}
+\usepackage{titlesec}
+\usepackage[cache=false]{minted}
 %
 % Change \setmonofont to any font installed on your local machine.
 %
-\setmonofont{Fira Mono}
+\setmainfont{Bitter}
+\setmonofont{Hack}
 \usemintedstyle{monokai}
 
 \definecolor{codegray}{rgb}{0.450,0.514,0.514}
+\definecolor{bgcolor}{HTML}{eee8d5}
+\definecolor{solred}{HTML}{dc322f}
+\definecolor{solblue}{HTML}{268bd2}
+\definecolor{solgreen}{HTML}{859900}
+\definecolor{solyellow}{HTML}{b58900}
+\definecolor{solbase03}{HTML}{002b36}
+\definecolor{solbase02}{HTML}{073642}
 
+\definecolor{gvbg}{HTML}{fbf1c7}
+\definecolor{gvred}{HTML}{cc241d}
+\definecolor{gvblue}{HTML}{458588}
+\definecolor{solgreen}{HTML}{859900}
+\definecolor{solyellow}{HTML}{b58900}
+\definecolor{gvbgdark}{HTML}{282828}
+\definecolor{solbase02}{HTML}{073642}
+
+
+\titleformat*{\section}{\LARGE\normalfont\bfseries\color{gvbgdark}}
 \renewcommand\theFancyVerbLine{\scriptsize\color{codegray}\ttfamily\arabic{FancyVerbLine}}
 %
 % Beginning of Document
@@ -44,27 +62,29 @@
 %
 \Huge\textbf{Lab Report Title}
 \vskip 0.5in
+\pagecolor{bgcolor}
 %
 % Change Lab #
 %
-\large\textbf{LAB \#} \par
-\Large\textbf{SE 185 SECTION A}
+\Large\textbf{LAB \#} \par
+\LARGE\color{gvred}\textbf{SE 185 SECTION A}
 \vskip 0.5in
-\large\textbf{SUBMITTED BY:} \par
+\large\color{gvbgdark}\textbf{SUBMITTED BY:} \par
 %
 % Change Name
 %
-\LARGE\textbf{Stephen Onnen}
+\LARGE\color{gvred}\textbf{Stephen Onnen}
 \vskip 0.5in
-\large\textbf{SUBMISSION DATE:} \par
+\large\color{gvbgdark}\textbf{SUBMISSION DATE:} \par
 %
 % Change Submission Date
 %
-\LARGE\textbf{January 10th, 2018}
+\LARGE\color{gvred}\textbf{January 10th, 2018}
 \vspace*{\fill}
 \end{center}
 \end{titlepage}
 \begin{normalsize} % Document Body
+\color{gvbgdark}
 
 \section*{Lab Problem} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -94,6 +114,25 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+Our problem was to create a simple program designed to perform statistical
+operations. Subdividing the problem into a series of steps, our lab team decided on the
+following initial algorithm: \par 
+\begin{enumerate}\color{gvblue}
+	\item Get the six test scores. 
+	\item Compute the average of the scores using the formula (s 1 + s 2 + ... + s 6 )/6.0. 
+	\item Display the average. 
+\end{enumerate}
+In addition, we decided to extend our solution by asking the user to sign in with his or her
+initials. Once entered, the program would display his or her initials and ask the user to
+enter six separated test scores. Finally the program would calculate the mean of those
+scores and print the average to screen. \par
+Using the basic outline above, we designed our program in steps. We first began
+be selecting the variable data types. All numeric data was assigned to float data types
+in order to accurately store decimal numbers in the range of 0 to 100, while initial would
+be stored to char types. We next modified our source code to utilize the scanf()
+command to process each input variable. To process and ensure proper input data, we
+utilized the hints given in the lab instructions.
+
 
 \vskip 0.25in
 \section*{Testing}
@@ -102,7 +141,7 @@
 %              !!!!!!!!!!TESTING!!!!!!!!!		%
 %							%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+Test here
 
 
 \vskip 0.25in
@@ -118,8 +157,9 @@
 \end{normalsize}
 \begin{normalsize} % Code
 \pagebreak
+\pagecolor{bgcolor}
 \begin{center}
-\Large\textbf{Source Code}
+\LARGE\color{gvbgdark}\textbf{Source Code}
 \end{center}
 \vskip 0.25in
 \ttfamily
