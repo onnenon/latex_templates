@@ -7,19 +7,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass{article}
-
 %
 % Packages
 %
-
 \usepackage{color}
 \usepackage[letterpaper, margin=1in]{geometry}
-%\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{fontspec}
-\usepackage[cache=false]{minted}
+\usepackage{minted}
+%
+% Change \setmonofont to any font installed on your local machine.
+%
 \setmonofont{Fira Mono}
-\usemintedstyle{*monokai*}
+\usemintedstyle{monokai}
 
 \definecolor{codegray}{rgb}{0.450,0.514,0.514}
 
@@ -27,36 +27,45 @@
 %
 % Beginning of Document
 %
-
 \begin{document}
 
-%
-% Title Page
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%							%
+%       	Edit the Title Page Infomation		%
+%							%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{titlepage} 
 \begin{center}
 \vspace*{\fill}
 %
 % Change Title Page to Correct Name
+%
 \Huge\textbf{Lab Report Title}
 \vskip 0.5in
 %
 % Change Lab #
+%
 \large\textbf{LAB \#} \par
 \Large\textbf{SE 185 SECTION A}
 \vskip 0.5in
 \large\textbf{SUBMITTED BY:} \par
+%
+% Change Name
+%
 \LARGE\textbf{Stephen Onnen}
 \vskip 0.5in
 \large\textbf{SUBMISSION DATE:} \par
+%
+% Change Submission Date
+%
 \LARGE\textbf{January 10th, 2018}
 \vspace*{\fill}
 \end{center}
 \end{titlepage}
 \begin{normalsize} % Document Body
 
-\section{Lab Problem} 
+\section*{Lab Problem} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %							%
 %            !!!!!!!!!!LAB PROBLEM!!!!!!!!!		%
@@ -66,7 +75,7 @@
 
 
 \vskip 0.25in
-\section{Analysis}
+\section*{Analysis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %							%
 %             !!!!!!!!!!ANALYSIS!!!!!!!!!		%
@@ -76,7 +85,7 @@
 
 
 \vskip 0.25in
-\section{Design}
+\section*{Design}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %							%
 %               !!!!!!!!!!DESIGN!!!!!!!!!		%
@@ -86,7 +95,7 @@
 
 
 \vskip 0.25in
-\section{Testing}
+\section*{Testing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %							%
 %              !!!!!!!!!!TESTING!!!!!!!!!		%
@@ -96,7 +105,7 @@
 
 
 \vskip 0.25in
-\section{Comments}
+\section*{Comments}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %							%
 %     	      !!!!!!!!!!COMMENTS!!!!!!!!!		%
@@ -117,7 +126,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %							%
-%     !!!!!!!!!!CODE GOES INSIDE {minted}!!!!!!!!!	%
+%     !!!!!!!!!!Input correct file name!!!!!!!!!!	%
 %     		  Change Language Type			%
 %							%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
